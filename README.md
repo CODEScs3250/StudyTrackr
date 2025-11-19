@@ -35,7 +35,7 @@ https://www.oracle.com/java/technologies/downloads/
 
 ## Clone the Repository
 
-    git clone https://github.com/your-username/study-goals-tracker.git
+    git clone https://github.com/CODEScs3250/StudyTrackr
 
 ### Alternative (ZIP Download)
 
@@ -126,30 +126,3 @@ Displays all goals.
 ### Save & Exit
 
 Saves data and closes the app.
-
-
-## Common Errors
-
-### "javac: file not found"
-
-You are not inside the folder containing `.java` files.
-
-Windows:
-
-    dir
-
-Mac/Linux:
-
-    ls
-
-You should see:
-
--   App.java\
--   StudySession.java\
--   StudyTracker.java\
--   Goal.java
-
-
-## You're Ready
-
-You now know how to install, compile, run, and navigate StudyTrackr.
