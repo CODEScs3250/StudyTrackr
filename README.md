@@ -6,79 +6,66 @@ Unlike generic time-tracking or note-taking applications our product provides a 
 
 # Tutorial
 
-🔧 Prerequisites
+## Prerequisites
 
 Before running this app, you need:
 
-✔ Java 17 or newer
+-    **Java 17 or newer**
 
-To check your Java version:   java -version
+Check your version:
 
-If you see something like:  java version "17.0.xx"
+    java -version
 
-you’re good.
+If the output shows:
 
-If NOT, download Java here: 👉 https://www.oracle.com/java/technologies/downloads/ 
+    java version "17.0.xx"
 
-⚙️ Setup Instructions
+you're good. Otherwise, download Java here:
 
-Follow these steps exactly.
+https://www.oracle.com/java/technologies/downloads/
 
-1️⃣ Open your command line
-
-Windows: Press Windows Key → type cmd → press Enter
-
-Mac: Open Terminal
-
-Linux: Open your system’s terminal
-
-🌐 How to Clone the Repository
-
-use this: git clone https://github.com/your-username/study-goals-tracker.git
+## Setup Instructions
 
 
+### 1. Open your command line
 
-If you do not have Git installed or the teacher gave you a ZIP file:
+**Windows:** Press Windows Key → type cmd → Enter\
+**Mac:** Open Terminal\
+**Linux:** Open your system terminal
 
-Alternative Method
+## Clone the Repository
 
-Go to the GitHub page
+    git clone https://github.com/your-username/study-goals-tracker.git
 
-Click Code → Download ZIP
+### Alternative (ZIP Download)
 
-Extract the ZIP
+1.  Go to the GitHub page\
+2.  Click **Code → Download ZIP**\
+3.  Extract the ZIP\
+4.  Use `cd` to move into the extracted folder
 
-Open the extracted folder in your command line using cd
+## Installing Requirements
 
-Example: cd Desktop
-cd study-goals-tracker
+This app requires:
 
-
-📦 Installing Requirements
-
-This app does not use external libraries.
-
-You only need:
-
-Java JDK 17 or later
-
-After cloning/download:
-
-Navigate into the project folder: cd study-goals-tracker
-
-Navigate into the src folder (where all .java files are stored): cd src
-
-Compile all Java files: javac *.java
-
-f there are no errors, it means your program compiled successfully.
+-   **Java JDK 17 or later**
 
 
-▶️ Running the Application
+After cloning or downloading:
 
-Once compiled, run the program using: java App
+    cd study-goals-tracker
+    cd src
+    javac *.java
+If there are no errors, it means your program compiled successfully.
 
-✨ This starts the Study & Goals Tracker.
 
+## Running the Application
+
+Run:
+
+    java App
+
+This launches the StudyTrackr program.
 
 🖥️ Startup Screen
 
@@ -101,123 +88,68 @@ Enter an option (1-5):
 If you see this menu, the app is running correctly.
 
 
-🧭 How to Navigate the Main Menu
+## Main Menu Navigation
 
-You control everything by typing numbers and pressing Enter.
+### Add Study Session
 
-1️⃣ Add Study Session
+Enter:
 
-Lets you log a new study session.
-You will enter:
-
-Subject name
-
-Date (YYYY-MM-DD)
-
-Minutes studied
-
-Notes (optional)
-
-Example:   🧭 How to Navigate the Main Menu
-
-You control everything by typing numbers and pressing Enter.
-
-1️⃣ Add Study Session
-
-Lets you log a new study session.
-You will enter:
-
-Subject name
-
-Date (YYYY-MM-DD)
-
-Minutes studied
-
-Notes (optional)
-
-Example: 🧭 How to Navigate the Main Menu
-
-You control everything by typing numbers and pressing Enter.
-
-1️⃣ Add Study Session
-
-Lets you log a new study session.
-You will enter:
-
-Subject name
-
-Date (YYYY-MM-DD)
-
-Minutes studied
-
-Notes (optional)
-
-Example: 
-
-Subject: Math
-Date: 2025-11-20
-Minutes: 45
-Notes: Quiz review
-
-2️⃣ View Study Sessions
-
-Shows all previous sessions.
-You will see:
- Math | 2025-11-20 | 45 minutes | Quiz review
-
-3️⃣ Add Goal
-
-Lets you create a personal goal.
-
-You will enter:
-
-Title
-
-Description
-
-Target date
-
-Tasks (optional)
+-   Subject\
+-   Date (YYYY-MM-DD)\
+-   Minutes\
+-   Notes (optional)
 
 Example:
 
- Goal Title: Finish Java Project
-Description: Complete CS assignment
-Target Date: 2025-12-01
+    Subject: Math
+    Date: 2025-11-20
+    Minutes: 45
+    Notes: Quiz review
+
+### View Study Sessions
+
+Lists all logged sessions.
+
+### Add Goal
+
+Enter:
+
+-   Title\
+-   Description\
+-   Target date\
+-   Tasks (optional)
+
+### View Goals
+
+Displays all goals.
+
+### Save & Exit
+
+Saves data and closes the app.
 
 
-4️⃣ View Goals
+## Common Errors
 
-Displays all active and completed goals.
+### "javac: file not found"
 
-5️⃣ Save & Exit
+You are not inside the folder containing `.java` files.
 
-Saves everything to file and closes the application.
+Windows:
+
+    dir
+
+Mac/Linux:
+
+    ls
+
+You should see:
+
+-   App.java\
+-   StudySession.java\
+-   StudyTracker.java\
+-   Goal.java
 
 
-❗ "javac: file not found"
+## You're Ready
 
-You are not inside the folder where the .java files are located.
-
-Type: ls
-
-or 
-
- Type: dir
-
-
-and check that you see files like:  App.java
-StudySession.java
-StudyTracker.java
-Goal.java
-
-🎉 You’re Ready!
-
-You now know how to:
-
-✔ Clone the project
-✔ Install Java
-✔ Use the command line
-✔ Compile the program
-✔ Run the app
-✔ Navigate the menu
+You now know how to install, compile, run, and navigate StudyTrackr.
