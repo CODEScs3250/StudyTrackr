@@ -30,6 +30,12 @@ System.out.println("-------------------------");
 
 // Main Loop implemenation //
 while (running) {
+printMainMenu();
+System.out.print("Select an Option (1-4): ");
+
+String choice = input.nextLine().trim();
+
+switch (choice) {
   case "1":
 	System.out.println("\n[Start Study Session] Coming soon...\n");
 	break;
@@ -55,7 +61,7 @@ input.close();
 }
 
 // Prints the main menu // 
-private static printMainmenu() {
+private static void printMainMenu() {
   System.out.println("Main Menu:");
   System.out.println(" 1. Start Study Session");
   System.out.println(" 2. View Tasks");
