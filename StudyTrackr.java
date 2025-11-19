@@ -18,6 +18,9 @@ public static void main(String[] args) {
 Scanner input = new Scanner(System.in);
 boolean running = true;
 
+// To-Do List feature (separate class)
+ToDoList todoList = new ToDoList();
+
 /*
 *
 * Welcome Banner.
@@ -37,21 +40,27 @@ String choice = input.nextLine().trim();
 
 switch (choice) {
   case "1":
-	System.out.println("\n[Start Study Session] Coming soon...\n");
-	break;
+        System.out.println("\n[Start Study Session] Coming soon...\n");
+        break;
 
   case "2":
-        System.out.println("\n[View Tasks] Coming soon...\n");
+        // View Tasks (delegates to ToDoList)
+        todoList.viewTasks();
         break;
 
   case "3":
-        System.out.println("\n[Add Tasks] Coming soon...\n");
+        // Add Tasks (delegates to ToDoList)
+        todoList.addTasks(input);
         break;
 
   case "4":
         System.out.println("\nExiting StudyTrackr. Goodbye!\n");
         running = false;
-	break;
+        break;
+
+  default:
+        System.out.println("\nInvalid choice. Please enter a number 1-4.\n");
+        break;
 }
 
 }
